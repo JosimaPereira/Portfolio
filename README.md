@@ -12,4 +12,4 @@
 ## Link do repositorio no GitHub:
 <https://github.com/JosimaPereira/Portfolio.git>
 ## Link do GitHub Page
-< https://josimapereira.github.io/Portfolio/>
+<https://josimapereira.github.io/Portfolio>
