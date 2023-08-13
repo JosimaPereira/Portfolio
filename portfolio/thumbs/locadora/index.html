@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Locadora Virtual</title>
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <img src="img/film.svg" alt="locadora 2000" class="me-3" />
+        <a href="#topo" rel="noopener noreferrer" class="navbar-brand"
+          >Locadora Virtual</a
+        >
+        <div class="collapse navbar-collapse" id="navBarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li>
+              <a
+                href="#tafilmes"
+                rel="noopener noreferrer"
+                class="nav-link active"
+                aria-current="page"
+                >Filmes Disponiveis</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                href="#drop"
+                rel="noopener noreferrer"
+                class="nav-link dropdown-toggle"
+                id="dropGeneros"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Filmes por Categoria</a
+              >
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li>
+                  <a
+                    href="#gacao"
+                    rel="noopener noreferrer"
+                    class="dropdown-item"
+                    >Ação</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#ganim"
+                    rel="noopener noreferrer"
+                    class="dropdown-item"
+                    >Animação</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#groman"
+                    rel="noopener noreferrer"
+                    class="dropdown-item"
+                    >Romance</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#gsus"
+                    rel="noopener noreferrer"
+                    class="dropdown-item"
+                    >Suspense</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="#cadfilmes" class="nav-link">Cadastrar Filmes</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <h1 class="display-1 text-center mb-5 mt-3" id="topo">Locadora Virtual</h1>
+    <div class="container">
+      <table class="table table-striped table-hover">
+        <thead>
+          <tr>
+            <th scope="col">Código</th>
+            <th scope="col">Título</th>
+            <th scope="col">Diretor</th>
+            <th scope="col">Lançamento</th>
+            <th scope="col">Gêneros</th>
+            <th scope="col">Ator/Atriz Principal</th>
+            <th scope="col">Nota IMDb</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th class="text-center table-primary" colspan="7" id="gacao">
+              Ação
+            </th>
+          </tr>
+          <tr>
+            <th scope="row">1</th>
+            <td scope="col">Homem-Aranha</td>
+            <td scope="col">Sam Raimi</td>
+            <td scope="col">17 maio 2002</td>
+            <td scope="col">Ação</td>
+            <td scope="col">Tom Holland</td>
+            <td scope="col">7</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td scope="col">Príncipe da Pérsia As areias do Tempo</td>
+            <td scope="col">Mike Newell</td>
+            <td scope="col">3 de junho de 2010</td>
+            <td scope="col">Ação</td>
+            <td scope="col">Gemma Arterton</td>
+            <td scope="col">7</td>
+          </tr>
+          <tr>
+            <th class="text-center table-primary" colspan="7" id="ganim">
+              Animação
+            </th>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td scope="col">Mundo Estranho</td>
+            <td scope="col">Don Hall</td>
+            <td scope="col">24 de novembro de 2022</td>
+            <td scope="col">Animação</td>
+            <td scope="col">Gabrielle Union</td>
+            <td scope="col">8</td>
+          </tr>
+          <tr>
+            <th>4</th>
+            <td>Soul</td>
+            <td>Pete Docter</td>
+            <td>11 de Outubro 2020</td>
+            <td>Animação</td>
+            <td>Jamie Foxx</td>
+            <td>8</td>
+          </tr>
+          <tr>
+            <th class="text-center table-primary" colspan="7" id="groman">
+              Romance
+            </th>
+          </tr>
+          <tr>
+            <th scope="row">5</th>
+            <td scope="col">Ghosted: Sem Resposta</td>
+            <td scope="col">Dexter Fletcher</td>
+            <td scope="col">21 de abril de 2023</td>
+            <td scope="col">Romance</td>
+            <td scope="col">Chris Evans</td>
+            <td scope="col">7</td>
+          </tr>
+          <tr>
+            <th scope="row">6</th>
+            <td scope="col">Amor de Redenção</td>
+            <td scope="col">D. J. Caruso</td>
+            <td scope="col">9 de junho de 2022</td>
+            <td scope="col">Romance</td>
+            <td scope="col">Abigail Cowen</td>
+            <td scope="col">7</td>
+          </tr>
+          <tr>
+            <th class="text-center table-primary" colspan="7" id="gsus">
+              Suspense
+            </th>
+          </tr>
+          <tr>
+            <th scope="row">7</th>
+            <td scope="col">A queda</td>
+            <td scope="col">Scott Mann</td>
+            <td scope="col">29 de setembro de 2022</td>
+            <td scope="col">Suspense</td>
+            <td scope="col">Grace Caroline</td>
+            <td scope="col">7</td>
+          </tr>
+          <tr>
+            <th scope="row">8</th>
+            <td scope="col">Alerta Máximo</td>
+            <td scope="col">Jean-François Richet</td>
+            <td scope="col">26 de janeiro de 2023</td>
+            <td scope="col">Suspense</td>
+            <td scope="col">Mike Colter</td>
+            <td scope="col">7</td>
+          </tr>
+          <tr id="insertRow"></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="mb-5 mt-5">
+      <hr class="border-primary border-3 opacity-75" />
+    </div>
+    <div class="container mb-5" id="cadfilmes">
+      <h2 class="text-center mb-4">Cadastro de Filmes</h2>
+      <form name="register" onsubmit="event.preventDefault()">
+        <!-- Cadastro do Código e do Título -->
+        <div class="row">
+          <div class="mb-3 col">
+            <label for="codFilm" class="form-label">Código</label>
+            <input type="text" id="codfilm" class="form-control" name="cod" />
+          </div>
+          <div class="mb-3 col">
+            <label for="titleFilm" class="form-label">Título</label>
+            <input
+              type="text"
+              id="titleFilm"
+              class="form-control"
+              name="title"
+            />
+          </div>
+        </div>
+        <!-- Cadastro de Diretor e Lançamento -->
+        <div class="row">
+          <div class="mb-3 col">
+            <label for="directorFilm" class="form-label">Diretor</label>
+            <input
+              type="text"
+              id="directorFilm"
+              class="form-control"
+              name="director"
+            />
+          </div>
+          <div class="mb-3 col">
+            <label for="yearFilm" class="form-label">Lançamento</label>
+            <input type="text" id="yearFilm" class="form-control" name="date" />
+          </div>
+        </div>
+        <!-- Cadastro de Atriz/Ator e Nota IMDb -->
+        <div class="row">
+          <div class="mb-3 col">
+            <label for="directorFilm" class="form-label">Atriz/Ator</label>
+            <input
+              type="text"
+              id="directorFilm"
+              class="form-control"
+              name="actor"
+            />
+          </div>
+          <div class="mb-3 col">
+            <label for="yearFilm" class="form-label">Nota IMDb</label>
+            <input
+              type="number"
+              id="yearFilm"
+              class="form-control"
+              name="note"
+            />
+          </div>
+        </div>
+        <!-- Cadastro Gênero -->
+        <h3 id="select">Selecione o Gênero</h3>
+        <div class="row mt-3">
+          <div class="col form-check ms-5">
+            <input
+              type="radio"
+              name="radio"
+              id="radioGAcao"
+              class="form-check-input"
+              value="acao"
+            />
+            <label for="radioGAcao" class="form-label">Ação</label>
+          </div>
+          <div class="col form-check">
+            <input
+              type="radio"
+              name="radio"
+              id="radioGAnim"
+              class="form-check-input"
+              value="animacao"
+            />
+            <label for="radioGAnim" class="form-label">Animação</label>
+          </div>
+          <div class="col form-check">
+            <input
+              type="radio"
+              name="radio"
+              id="radioGRoman"
+              class="form-check-input"
+              value="romance"
+            />
+            <label for="radioGRoman" class="form-label">Romance</label>
+          </div>
+          <div class="col form-check">
+            <input
+              type="radio"
+              name="radio"
+              id="radioGSus"
+              class="form-check-input"
+              value="suspense"
+            />
+            <label for="radioGSus" class="form-label">Suspense</label>
+          </div>
+        </div>
+        <!-- Botão de enviar -->
+        <div class="col-auto d-flex justify-content-center">
+          <button
+            type="submit"
+            class="btn btn-primary mt-3"
+            onclick="validationForm(); insert();"
+          >
+            Cadastrar
+          </button>
+        </div>
+      </form>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
